@@ -1,6 +1,9 @@
 body {
-    background-image: radial-gradient(darkblue, lightblue);
-    background-size: cover;
+    /*circular background from dark to light*/
+    background-image: radial-gradient(darkblue, lightblue); 
+    
+    /*stretch the background to fit the size of the screen*/
+    background-size: cover; 
 }
 
 header {
@@ -46,6 +49,7 @@ header {
 }
 
 @keyframes glide {
+    /*Move the "trailer link" from (out of screen) to the right (glide in effect)*/
     0% {
         left: 400%;
     }
@@ -54,6 +58,9 @@ header {
     }
 }
 
+/*When the mouse hovers the iphone, triggering 3 different transition/animation*/
+
+/*The text comes out and becomes visible*/
 img:hover+p+p {
     opacity: 1;
 }
@@ -62,6 +69,7 @@ img:hover+p {
     opacity: 1;
 }
 
+/*The text below the phone spins 360 continuously  until the mouse does not hover the phone*/
 img:hover+p+p+p {
     animation-name: spin;
     animation-iteration-count: infinite;
@@ -122,6 +130,7 @@ img {
 }
 
 @keyframes phone {
+    /*Glide in effect from the top to the middle of the page and then do a 360 spin */
     0% {
         opacity: 0;
     }
